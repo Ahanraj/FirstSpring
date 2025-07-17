@@ -6,5 +6,5 @@ public interface StudentService {
 	void saveStudent(StudentDetails studentDetails);
 	
 	List<StudentDetails> getAllstudent();
-
+	void deleteStudent(Integer id);
 }

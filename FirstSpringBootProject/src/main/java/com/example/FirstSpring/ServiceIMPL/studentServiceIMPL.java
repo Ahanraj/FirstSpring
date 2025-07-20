@@ -32,5 +32,10 @@ public class studentServiceIMPL implements StudentService {
 	public void deleteStudent(Integer id) {
 		studentRepository.deleteById(id);
 	}
+	
+	@Override
+	public StudentDetails getStudentbyId(Integer id) {
+	return studentRepository.findById(id).get();
+}
 
 }

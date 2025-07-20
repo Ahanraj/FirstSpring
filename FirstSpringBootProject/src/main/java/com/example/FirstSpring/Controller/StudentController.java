@@ -35,4 +35,10 @@ public class StudentController {
 		studentService.deleteStudent(id);
 		return "Delete successfully";
 	}
+	@GetMapping("/get/{id}")
+	public StudentDetails getStudentbyId(@PathVariable("id") Integer id) {
+		return studentService.getStudentbyId(id);
+	}
+	
+	
 }
